@@ -15,11 +15,11 @@
   </extension>
 </addon>
 
-    <addon id="repository.teverz" name="Teverz Addon Repo" version="1.0.2" provider-name="Teverz">
+    <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="1.0.2" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
-        <extension point="xbmc.addon.repository" name="Teverz Addon Repo">
+        <extension point="xbmc.addon.repository" name="[COLOR blue]Teverz Addon Repo[/COLOR]">
             <info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
