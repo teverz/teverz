@@ -4,9 +4,9 @@
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
         <extension point="xbmc.addon.repository" name="[COLOR blue]Teverz Addon Repo[/COLOR]">
-            <info compressed="false">https://githubusercontent.com/teverz/teverz/raw/master/_repo/addons.xml</info>
-            <checksum>https://githubusercontent.com/teverz/teverz/raw/master/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://githubusercontent.com/teverz/teverz/raw/master/_repo/</datadir>
+            <info compressed="false">https://github.com/teverz/teverz/raw/master/_repo/addons.xml</info>
+            <checksum>https://github.com/teverz/teverz/raw/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/teverz/teverz/raw/master/_repo/</datadir>
             <hashes>false</hashes>
         </extension>
         <extension point="xbmc.addon.metadata">
