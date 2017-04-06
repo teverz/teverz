@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.teverzswizard" name="[COLOR blue]Teverz Wizard[/COLOR]" version="1.0.5" provider-name="teverz">
+<addon id="plugin.program.teverzwizard" name="[COLOR blue]Teverz Wizard[/COLOR]" version="1.0.5" provider-name="teverz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
