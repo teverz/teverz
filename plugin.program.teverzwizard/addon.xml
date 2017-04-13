@@ -9,7 +9,7 @@
   <extension point="xbmc.service" library="startup.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">[COLOR blue]Teverz Wizard[/COLOR]</summary>
-    <description lang="en">Aftermath Wizard allows you to get access to the laTeverz Build Wizard allows you to gain access to the latest Teverz Builds and give you the opportunity to keep your Trakt and Real-Debrid info and much much more.test Aftermath Custom Builds.</description>
+    <description lang="en">Teverz Build Wizard allows you to gain access to the latest Teverz Builds and give you the opportunity to keep your Trakt and Real-Debrid info and much much more.</description>
     <platform>all</platform>
   </extension>
 </addon>
