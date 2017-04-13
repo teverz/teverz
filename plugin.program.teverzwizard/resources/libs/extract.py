@@ -17,7 +17,7 @@
 #  http://www.gnu.org/copyleft/gpl.html                                        #
 ################################################################################
 
-import zipfile, xbmcaddon, xbmc, uservar, sys, os, time, shutil
+import zipfile, xbmcaddon, xbmc, uservar, sys, os, time
 import wizard as wiz
 
 ADDON_ID       = uservar.ADDON_ID
@@ -36,7 +36,6 @@ KEEPSUPER      = wiz.getS('keepsuper')
 KEEPREPOS      = wiz.getS('keeprepos')
 KEEPWHITELIST  = wiz.getS('keepwhitelist')
 KODIV          = float(xbmc.getInfoLabel("System.BuildVersion")[:4])
-KODIVERSION          = xbmc.getInfoLabel("System.BuildVersion")
 LOGFILES       = ['xbmc.log', 'xbmc.old.log', 'kodi.log', 'kodi.old.log', 'spmc.log', 'spmc.old.log', 'tvmc.log', 'tvmc.old.log', 'Thumbs.db', '.gitignore', '.DS_Store']
 bad_files      = ['onechannelcache.db', 'saltscache.db', 'saltscache.db-shm', 'saltscache.db-wal', 'saltshd.lite.db', 'saltshd.lite.db-shm', 'saltshd.lite.db-wal', 'queue.db', 'commoncache.db', 'access.log', 'trakt.db', 'video_cache.db']
 
@@ -98,11 +97,7 @@ def allWithProgress(_in, _out, dp, ignore, title):
 		if skip == True: wiz.log("Skipping: %s" % item.filename, xbmc.LOGNOTICE)
 		else:
 			try:
-				if item.filename == 'userdata/Database/Addons27.db' and KODIVERSION.startswith("17"):
-					zin.extract(item, _out)
-					shutil.copy2(USERDATA + "/Database/Addons27.db", USERDATA + "/Database/Addons26.db")
-				else:
-					zin.extract(item, _out)
+				zin.extract(item, _out)
 			except Exception, e:
 				errormsg  = "[COLOR %s]File:[/COLOR] [COLOR %s]%s[/COLOR]\n" % (COLOR2, COLOR1, file[-1])
 				errormsg += "[COLOR %s]Folder:[/COLOR] [COLOR %s]%s[/COLOR]\n" % (COLOR2, COLOR1, (item.filename).replace(file[-1],''))

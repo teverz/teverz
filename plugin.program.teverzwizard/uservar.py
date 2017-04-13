@@ -4,7 +4,7 @@ import os, xbmc, xbmcaddon
 ### User Edit Variables #################################
 #########################################################
 ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
-ADDONTITLE     = 'Teverz Wizard'
+ADDONTITLE     = '[COLOR blue]Teverz Wizard[/COLOR]'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
 BUILDFILE      = 'http://www.teverz.com/wizard.txt'
@@ -14,7 +14,7 @@ UPDATECHECK    = 0
 # Text File with apk info in it.
 APKFILE        = 'http://www.teverz.com/apks.txt'
 # Text File with Youtube Videos urls.  Leave as 'http://' to ignore
-YOUTUBETITLE   = 'Tutorial Videos'
+YOUTUBETITLE   = 'Tutorials'
 YOUTUBEFILE    = 'http://www.teverz.com/tutorials.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
 ADDONFILE      = 'http://'
@@ -55,13 +55,13 @@ SPACER         = '='
 COLOR1         = 'dodgerblue'
 COLOR2         = 'white'
 # Primary menu items   / %s is the menu item and is required
-THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Community[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
+THEME1         = '[COLOR '+COLOR1+'][B][I]([COLOR '+COLOR2+']Aftermath[/COLOR])[/B][/COLOR] [COLOR '+COLOR2+']%s[/COLOR][/I]'
 # Build Names          / %s is the menu item and is required
 THEME2         = '[COLOR '+COLOR2+']%s[/COLOR]'
 # Alternate items      / %s is the menu item and is required
 THEME3         = '[COLOR '+COLOR1+']%s[/COLOR]'
 # Current Build Header / %s is the menu item and is required
-THEME4         = '[COLOR '+COLOR1+']Current Community Build:[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
+THEME4         = '[COLOR '+COLOR1+']Current Build:[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 # Current Theme Header / %s is the menu item and is required
 THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[/COLOR]'
 
@@ -69,7 +69,7 @@ THEME5         = '[COLOR '+COLOR1+']Current Theme:[/COLOR] [COLOR '+COLOR2+']%s[
 # Enable 'Contact' menu item 'Yes' hide or 'No' dont hide
 HIDECONTACT    = 'No'
 # You can add \n to do line breaks
-CONTACT        = 'Thank you for choosing Teverz Wizard.\r\n\r\nVisit us on our website at http://www.teverz.com or  facebook at https://www.facebook.com/teverzme/ or @teverzme on twitter'
+CONTACT        = 'Thank you for choosing Teverz Wizard.\r\n\r\nContact us on facebook at http://facebook.com/teverzme. Twitter @teverzme  Website http:teverz.com'
 #Images used for the contact window.  http:// for default icon and fanart
 CONTACTICON    = 'http://'
 CONTACTFANART  = 'http://'

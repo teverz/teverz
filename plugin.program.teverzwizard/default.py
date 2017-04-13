@@ -253,15 +253,15 @@ def buildMenu():
 							if kodiv == 18:
 								menu = createMenu('install', '', name)
 								addDir('[%s] %s (v%s)' % (float(kodi), name, version), 'viewbuild', name, description=description, fanart=fanart,icon=icon, menu=menu, themeit=THEME2)
-				if count15 > 0:
-					state = '+' if SHOW15 == 'false' else '-'
-					addFile('[B]%s Isengard and Below Builds(%s)[/B]' % (state, count15), 'togglesetting',  'show15', themeit=THEME3)
-					if SHOW15 == 'true':
+				if count17 > 0:
+					state = '+' if SHOW17 == 'false' else '-'
+					addFile('[B]%s Krypton Builds(%s)[/B]' % (state, count17), 'togglesetting',  'show17', themeit=THEME3)
+					if SHOW17 == 'true':
 						for name, version, url, gui, kodi, theme, icon, fanart, adult, description in match:
 							if not SHOWADULT == 'true' and adult.lower() == 'yes': continue
 							if not DEVELOPER == 'true' and wiz.strTest(name): continue
 							kodiv = int(float(kodi))
-							if kodiv <= 15:
+							if kodiv == 17:
 								menu = createMenu('install', '', name)
 								addDir('[%s] %s (v%s)' % (float(kodi), name, version), 'viewbuild', name, description=description, fanart=fanart,icon=icon, menu=menu, themeit=THEME2)
 				if count16 > 0:
@@ -275,15 +275,15 @@ def buildMenu():
 							if kodiv == 16:
 								menu = createMenu('install', '', name)
 								addDir('[%s] %s (v%s)' % (float(kodi), name, version), 'viewbuild', name, description=description, fanart=fanart,icon=icon, menu=menu, themeit=THEME2)
-				if count17 > 0:
-					state = '+' if SHOW17 == 'false' else '-'
-					addFile('[B]%s Krypton Builds(%s)[/B]' % (state, count17), 'togglesetting',  'show17', themeit=THEME3)
-					if SHOW17 == 'true':
+				if count15 > 0:
+					state = '+' if SHOW15 == 'false' else '-'
+					addFile('[B]%s Isengard and Below Builds(%s)[/B]' % (state, count15), 'togglesetting',  'show15', themeit=THEME3)
+					if SHOW15 == 'true':
 						for name, version, url, gui, kodi, theme, icon, fanart, adult, description in match:
 							if not SHOWADULT == 'true' and adult.lower() == 'yes': continue
 							if not DEVELOPER == 'true' and wiz.strTest(name): continue
 							kodiv = int(float(kodi))
-							if kodiv == 17:
+							if kodiv <= 15:
 								menu = createMenu('install', '', name)
 								addDir('[%s] %s (v%s)' % (float(kodi), name, version), 'viewbuild', name, description=description, fanart=fanart,icon=icon, menu=menu, themeit=THEME2)
 		elif hidden > 0: 
