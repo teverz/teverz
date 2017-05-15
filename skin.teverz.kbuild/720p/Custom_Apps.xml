@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1133" type="window">
+
+    <defaultcontrol always="true">7100</defaultcontrol>
+	<allowoverlay>true</allowoverlay>
+	
+    <controls>
+	
+
+
+		
+		
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			
+			<include>CommonBackground</include>
+			<control type="image">
+							<left>15</left>
+							<top>50</top>
+							<width>1255</width>
+							<height>50</height>
+							<texture border="10">ContentPanel.png</texture>
+							
+			</control>	 -->		
+			<control type="group">
+
+				
+				<!-- Addon kathegory List -->
+				<control type="list" id="7100">
+					<left>35</left>  <!-- 315 -->
+					<top>60</top>
+					<width>1150</width>  <!-- 1282 -->
+					<height>85</height>
+					<orientation>horizontal</orientation>
+					<onleft>7100</onleft>
+					<onright>7100</onright>
+					<onup>2</onup>
+					<ondown>80</ondown>
+					<onback>50</onback>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>300</scrolltime>
+					<itemgap>0</itemgap>
+					<align>center</align>
+					<itemlayout height="25" width="300">  <!-- height="50" width="320 -->
+						
+						<control type="label">
+							<left>5</left>
+							<top>0</top>
+							<width>280</width>
+							<height>25</height>
+							<font>card_condensed_32</font>
+							<textcolor>white</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						
+					</itemlayout>
+					
+					<focusedlayout height="25" width="300">  <!-- height="50" width="320 -->
+					
+						<control type="image">
+							<left>5</left>
+							<top>0</top>
+							<width>300</width>
+							<height>25</height>
+							<texture border="10">button-focus.png</texture>
+							<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(7100)">Conditional</animation>
+						</control>
+						
+						<control type="label">
+							<left>5</left>
+							<top>0</top>
+							<width>280</width>
+							<height>25</height>
+							<font>card_condensed_32</font>
+							<textcolor>white</textcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						
+					</focusedlayout>
+					
+					<content>
+						<item>
+							<label>VIDEO ADDONS</label>
+							
+							<property name="AppsTarget">videos</property>
+							<property name="AppsContent">addons://sources/video/</property>
+							<property name="AppsSortBy">lastused</property>
+							<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+						</item>
+						<item>
+							<label>MUSIC ADDONS</label>
+							<icon>DefaultAddonMusic.png</icon>
+							<property name="AppsTarget">music</property>
+							<property name="AppsContent">addons://sources/audio/</property>
+							<property name="AppsSortBy">lastused</property>
+							<onclick>ActivateWindow(Music,Addons,return)</onclick>
+						</item>
+						<item>
+							<label>PICTURES ADDONS</label>
+							
+							<property name="AppsTarget">pictures</property>
+							<property name="AppsContent">addons://sources/image/</property>
+							<property name="AppsSortBy">lastused</property>
+							<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+						</item>
+						<item>
+							<label>PROGRAM ADDONS</label>
+							
+							<property name="AppsTarget">programs</property>
+							<property name="AppsContent">addons://sources/executable/</property>
+							<property name="AppsSortBy">lastused</property>
+							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+						</item>
+						<item>
+							<label>ANDROID APPS</label>
+							
+							<property name="AppsTarget">programs</property>
+							<property name="AppsContent">androidapp://sources/apps/</property>
+							<property name="AppsSortBy">lastused</property>
+							<onclick>ActivateWindow(Programs,return)</onclick>
+							<visible>System.Platform.Android</visible>
+						</item>
+						<item>
+							<label>ADDONS BROWSER</label>
+							
+							<property name="AppsTarget"></property>
+							<property name="AppsContent">addons://user/all/</property>
+							<property name="AppsSortBy">lastupdated</property>
+							<onclick>ActivateWindow(AddonBrowser,return)</onclick>
+						</item>
+	
+					</content>
+					
+				</control>
+				
+			</control>
+			
+			<!-- Views -->
+			
+				
+		<control type="group">
+			<visible>Control.IsVisible(80)</visible>
+			
+			<!-- Cards -->
+			<control type="panel" id="80">
+				<left>15</left>
+				<top>100</top>
+				<width>1255</width>
+				<height>650</height>
+				
+				<onright>80</onright>
+				<onup>7100</onup>
+				<ondown>2</ondown>
+				<pagecontrol>60</pagecontrol>
+				<preloaditems>4</preloaditems>
+				<viewtype label="Cards">list</viewtype>
+				<orientation>horizontal</orientation>
+				<scrolltime tween="sine" easing="out">300</scrolltime>
+				
+
+				<itemlayout width="315" height="300">
+					<control type="image">
+						<left>0</left>
+						<width>175</width>
+						<height>175</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<colordiffuse>OverlayColorNF</colordiffuse>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>StringCompare(ListItem.Label,..)</visible>
+					</control>
+					<control type="group">
+						<visible>!StringCompare(ListItem.Label,..) + !SubString(ListItem.Label,...,right)</visible>
+						
+						<!-- Panel -->
+						<control type="image">
+							<left>0</left>
+							<width>315</width>
+							<height>295</height>
+							<texture background="true" colordiffuse="ffffffff">ContentPanel.png</texture>
+						
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						
+						<!-- Fanart -->
+						<control type="image">
+							<left>5</left>
+							<top>5</top>
+							<width>305</width>
+							<height>156</height>
+							<texture background="true" colordiffuse="$VAR[UnfocusColordiffuse]">$VAR[AddonFanart]</texture>
+							<bordersize>5</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+						</control>
+						
+						<!-- Icon -->
+						<control type="image">
+							<left>5</left>
+							<top>180</top>
+							<width>100</width>
+							<height>100</height>
+							<texture background="true" colordiffuse="$VAR[UnfocusColordiffuse]">$INFO[ListItem.Icon]</texture>
+							<bordersize>5</bordersize>
+							<aspectratio align="left">keep</aspectratio>
+						</control>
+						
+						<!-- 2nd row Label -->
+						<control type="label">
+							<left>110</left>
+							<top>190</top>
+							<width>180</width>
+							<height>35</height>
+							<font>font16</font>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+						</control>
+						
+						<!-- 3rd row Label -->
+						<control type="label">
+							<left>110</left>
+							<top>215</top>
+							<width>200</width>
+							<height>35</height>
+							<font>fontContextMenu</font>
+							<label>$INFO[ListItem.AddonVersion]</label>
+							<textcolor>grey</textcolor>
+						</control>
+						<control type="label">
+							<left>110</left>
+							<top>250</top>
+							<width>200</width>
+							<height>35</height>
+							<font>fontContextMenu</font>
+							<label>$INFO[ListItem.AddonCreator]</label>
+							<textcolor>grey</textcolor>
+						</control>						
+
+						
+						<!-- Addon Name Label -->
+
+
+						<!-- Watched status -->
+
+					</control>
+				</itemlayout>
+
+				<focusedlayout width="315" height="300">
+						
+						<control type="image">
+							<left>0</left>
+							<width>315</width>
+							<height>295</height>
+							<texture background="true" colordiffuse="ffffffff">ContentPanel.png</texture>
+							<bordertexture border="5">button-focus.png</bordertexture>
+							<bordersize>5</bordersize>							
+							<aspectratio align="center">stretch</aspectratio>
+						</control>
+						
+						<!-- Fanart -->
+						<control type="image">
+							<left>5</left>
+							<top>5</top>
+							<width>305</width>
+							<height>156</height>
+							<texture background="true" colordiffuse="$VAR[UnfocusColordiffuse]">$VAR[AddonFanart]</texture>
+							<bordersize>5</bordersize>
+							<aspectratio align="center">scale</aspectratio>
+						</control>
+						
+						<!-- Icon -->
+						<control type="image">
+							<left>5</left>
+							<top>180</top>
+							<width>100</width>
+							<height>100</height>
+							<texture background="true" colordiffuse="$VAR[UnfocusColordiffuse]">$INFO[ListItem.Icon]</texture>
+							<bordersize>5</bordersize>
+							<aspectratio align="left">keep</aspectratio>
+						</control>
+						
+						<!-- 2nd row Label -->
+						<control type="label">
+							<left>110</left>
+							<top>190</top>
+							<width>180</width>
+							<height>35</height>
+							<font>font16</font>
+							<label>$INFO[ListItem.Label]</label>
+							<textcolor>white</textcolor>
+						</control>
+						
+						<!-- 3rd row Label -->
+						<control type="label">
+							<left>110</left>
+							<top>215</top>
+							<width>200</width>
+							<height>35</height>
+							<font>fontContextMenu</font>
+							<label>$INFO[ListItem.AddonVersion]</label>
+							<textcolor>grey</textcolor>
+						</control>
+						<control type="label">
+							<left>110</left>
+							<top>250</top>
+							<width>200</width>
+							<height>35</height>
+							<font>fontContextMenu</font>
+							<label>$INFO[ListItem.AddonCreator]</label>
+							<textcolor>grey</textcolor>
+						</control>
+				</focusedlayout>
+				
+				<content target="$INFO[Container(7100).ListItem.Property(AppsTarget)]" sortby="$INFO[Container(7100).ListItem.Property(AppsSortBy)]" sortorder="descending">$INFO[Container(7100).ListItem.Property(AppsContent)]</content>
+				
+			</control>
+			
+
+			</control>
+	
+		</control>
+		
+			
+	
+	</controls>
+</window>

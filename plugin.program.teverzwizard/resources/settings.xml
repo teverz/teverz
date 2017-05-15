@@ -91,6 +91,7 @@
 		<setting id="meta" type="text" label="Meta: " enable="false" default=""/>
 		<setting id="salts" type="text" label="Salts: " enable="false" default=""/>
 		<setting id="saltshd" type="text" label="Salts HD: " enable="false" default=""/>
+		<setting id="saltsrd" type="text" label="Salts RD: " enable="false" default=""/>
 		<setting id="velocity" type="text" label="Velocity: " enable="false" default=""/>
 		<setting id="royalwe" type="text" label="The Royal We: " enable="false" default=""/>
 		<setting id="velocitykids" type="text" label="Velocity Kids: " enable="false" default=""/>

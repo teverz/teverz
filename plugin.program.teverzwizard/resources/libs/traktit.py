@@ -48,7 +48,7 @@ KEEPTRAKT      = wiz.getS('keeptrakt')
 TRAKTSAVE      = wiz.getS('traktlastsave')
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
-ORDER          = ['exodus', 'metalliq', 'salts', 'saltshd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
+ORDER          = ['exodus', 'metalliq', 'salts', 'saltshd', 'saltsrd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
 
 TRAKTID = { 
 	'exodus': {
@@ -99,6 +99,18 @@ TRAKTID = {
 		'default'  : 'trakt_user',
 		'data'     : ['trakt_oauth_token', 'trakt_refresh_token', 'trakt_user'],
 		'activate' : 'RunPlugin(plugin://plugin.video.saltshd.lite/?mode=auth_trakt)'},
+	'saltsrd': {
+		'name'     : 'Salts RD',
+		'plugin'   : 'plugin.video.saltsrd.lite',
+		'saved'    : 'saltsrd',
+		'path'     : os.path.join(ADDONS, 'plugin.video.saltsrd.lite'),
+		'icon'     : os.path.join(ADDONS, 'plugin.video.saltsrd.lite', 'icon.png'),
+		'fanart'   : os.path.join(ADDONS, 'plugin.video.saltsrd.lite', 'fanart.jpg'),
+		'file'     : os.path.join(TRAKTFOLD, 'saltsrd_trakt'),
+		'settings' : os.path.join(ADDOND, 'plugin.video.saltsrd.lite', 'settings.xml'),
+		'default'  : 'trakt_user',
+		'data'     : ['trakt_oauth_token', 'trakt_refresh_token', 'trakt_user'],
+		'activate' : 'RunPlugin(plugin://plugin.video.saltsrd.lite/?mode=auth_trakt)'},
 	'velocity': {
 		'name'     : 'Velocity',
 		'plugin'   : 'plugin.video.velocity',
@@ -169,8 +181,8 @@ TRAKTID = {
 		'file'     : os.path.join(TRAKTFOLD, 'trakt_trakt'),
 		'settings' : os.path.join(ADDOND, 'script.trakt', 'settings.xml'),
 		'default'  : 'user',
-		'data'     : ['user', 'Auth_Info', 'authorization'],
-		'activate' : 'RunScript(script.trakt, action=auth_info)'}
+		'data'     : ['user', 'authorization'],
+		'activate' : 'RunScript(script.trakt, action=authorization)'}
 }
 
 def traktUser(who):

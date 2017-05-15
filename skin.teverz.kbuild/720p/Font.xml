@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fonts>
+	
+	
+	
+	<fontset id="Normal" idloc="31391">
+		<!-- Normal Fonts -->
+		<font>
+			<name>font8</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>11</size>
+		</font>
+		<font>
+			<name>font10</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>font11</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font_plot</name>
+			<filename>Roboto-Italic.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font13</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font13_big</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font16</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>24</size><!-- test 25 orig -->
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>fontContextMenu</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>18</size>
+		</font>
+		<!-- used in global search default skin -->
+		<font>
+			<name>font_textbox</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+			<linespacing>1.2</linespacing>
+		</font>
+		
+		<!-- Title Fonts -->
+		<font>
+			<name>font10_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
+			<name>font12_title</name>
+			<filename>Roboto-Medium.ttf</filename><!-- Bold orig -->
+			<size>18</size><!-- 17 orig -->
+		</font>
+		<font>
+			<name>font13_title</name>
+			<filename>Roboto-Medium.ttf</filename><!-- test Bold orig -->
+			<size>21</size><!-- test 20 orig -->
+		</font>
+		<font>
+			<name>font24_title</name>
+			<filename>Roboto-Medium.ttf</filename><!-- test -->
+			<size>22</size>
+		</font>
+		<font>
+			<name>font28_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>font30_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>font35_title</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>35</size>
+		</font>
+		<font>
+			<name>font_MainMenu</name>
+			<filename>BebasNeue.ttf</filename>
+			<style>uppercase</style>
+			<size>45</size>
+		</font>
+		<font>
+			<name>font_SubMenu</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<style>uppercase</style>
+			<size>112</size>
+		</font>
+		<font>
+			<name>WeatherTemp</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>40</size>
+		</font>
+		
+		
+		
+		<!-- LightX FONTS -->
+		<font>
+			<name>Light20</name>
+			<filename>Roboto-Light.ttf</filename>
+			<size>20</size>
+		</font>
+		
+		<!-- RegularX FONTS -->
+		<font>
+			<name>Regular14</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>Regular15</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>15</size>
+		</font>
+		<font>
+			<name>Regular16</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>Regular17</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>17</size>
+		</font>
+		<font>
+			<name>Regular17+</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>17</size>
+			<linespacing>1.15</linespacing>
+		</font>
+		<font>
+			<name>Regular18</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Regular19</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>19</size>
+		</font>
+		<font>
+			<name>Regular19+</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>19</size>
+			<linespacing>1.10</linespacing>
+		</font>
+		<font>
+			<name>Regular20</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Regular20+</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>20</size>
+			<linespacing>1.15</linespacing>
+		</font>
+		<font>
+			<name>Regular21</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>21</size>
+		</font>
+		<font>
+			<name>Regular22</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Regular23</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>Regular26</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
+			<name>Regular28</name>
+			<filename>Roboto-Regular.ttf</filename>
+			<size>28</size>
+		</font>
+		
+		<!-- MediumX FONTS -->
+		<font>
+			<name>Medium16</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>Medium17</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>17</size>
+		</font>
+		<font>
+			<name>Medium18</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Medium20</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Medium21</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>21</size>
+		</font>
+		<font>
+			<name>Medium22</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Medium23</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>Medium28</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Medium30</name>
+			<filename>Roboto-Medium.ttf</filename>
+			<size>30</size>
+		</font>
+		
+		
+		
+	</fontset>
+	
+	
+	<fontset id="Default" idloc="31390">
+		<!-- Normal Fonts -->
+		<font>
+			<name>font8</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>11</size>
+		</font>
+		<font>
+			<name>font10</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>font11</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font_keyboard</name>
+			<filename>Roboto-Italic.ttf</filename>
+			<style>italic</style>
+			<size>24</size>
+		</font>
+		
+		<font>
+			<name>font_plot</name>
+			<filename>Roboto-Italic.ttf</filename>
+			<style>italic</style>
+			<size>20</size>
+		</font>
+		<font>
+			<name>font13</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font13_big</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>font16</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>24</size><!-- test 25 orig -->
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>35</size>
+		</font>
+		<font>
+			<name>fontContextMenu</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>18</size>
+		</font>
+		<!-- used in global search default skin -->
+		<font>
+			<name>font_textbox</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>16</size>
+			<linespacing>1.2</linespacing>
+		</font>
+		
+		<!-- Title Fonts -->
+		<font>
+			<name>font10_title</name>
+			<filename>AeonBold.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
+			<name>font12_title</name>
+			<filename>AeonMedium.ttf</filename><!-- Bold orig -->
+			<size>18</size><!-- 17 orig -->
+		</font>
+		<font>
+			<name>font13_title</name>
+			<filename>AeonMedium.ttf</filename><!-- test Bold orig -->
+			<size>21</size><!-- test 20 orig -->
+		</font>
+		<font>
+			<name>font24_title</name>
+			<filename>AeonMedium.ttf</filename><!-- test -->
+			<size>22</size>
+		</font>
+		<font>
+			<name>font28_title</name>
+			<filename>AeonBold.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>font30_title</name>
+			<filename>AeonBold.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>font35_title</name>
+			<filename>AeonBold.ttf</filename>
+			<size>35</size>
+		</font>
+		<font>
+			<name>font_MainMenu</name>
+			<filename>AeonBold.ttf</filename>
+			<style>uppercase</style>
+			<size>52</size>
+		</font>
+		<font>
+			<name>font_SubMenu</name>
+			<filename>AeonRegular.ttf</filename>
+			<style>uppercase</style>
+			<size>20</size>
+		</font>
+		<font>
+			<name>WeatherTemp</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>40</size>
+		</font>
+		
+		
+		
+		<!-- LightX FONTS -->
+		<font>
+			<name>Light20</name>
+			<filename>AeonLight.ttf</filename>
+			<size>20</size>
+		</font>
+		
+		<!-- RegularX FONTS -->
+		<font>
+			<name>Regular14</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>Regular15</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>15</size>
+		</font>
+		<font>
+			<name>Regular16</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>Regular17</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>17</size>
+		</font>
+		<font>
+			<name>Regular17+</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>17</size>
+			<linespacing>1.15</linespacing>
+		</font>
+		<font>
+			<name>Regular18</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Regular19</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>19</size>
+		</font>
+		<font>
+			<name>Regular19+</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>19</size>
+			<linespacing>1.10</linespacing>
+		</font>
+		<font>
+			<name>Regular20</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Regular20+</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>20</size>
+			<linespacing>1.15</linespacing>
+		</font>
+		<font>
+			<name>Regular21</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>21</size>
+		</font>
+		<font>
+			<name>Regular22</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Regular23</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>Regular26</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
+			<name>Regular28</name>
+			<filename>AeonRegular.ttf</filename>
+			<size>28</size>
+		</font>
+		
+		<!-- MediumX FONTS -->
+		<font>
+			<name>Medium16</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>Medium17</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>17</size>
+		</font>
+		<font>
+			<name>Medium18</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Medium20</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Medium21</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>21</size>
+		</font>
+		<font>
+			<name>Medium22</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Medium23</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
+			<name>Medium28</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Medium30</name>
+			<filename>AeonMedium.ttf</filename>
+			<size>30</size>
+		</font>
+		
+		
+		
+	</fontset>
+	
+</fonts>

@@ -430,6 +430,7 @@ def getCacheSize():
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
+		(os.path.join(DATABASE,  'saltsrd.lite.db')),
 		(os.path.join(DATABASE,  'saltshd.lite.db'))]
 	cachelist = [
 		(PROFILEADDONDATA),
@@ -465,6 +466,7 @@ def getCacheSize():
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
+			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
 		if len(files) > 0:
 			for item in files: totalsize = getSize(item, totalsize)
 		else: log("Clear Cache: Clear Video Cache Not Enabled", xbmc.LOGNOTICE)
@@ -1246,6 +1248,9 @@ def backUpOptions(type, name=""):
 					 os.path.join(DATABASE, 'saltshd.lite.db'),
 					 os.path.join(DATABASE, 'saltshd.lite.db-shm'), 
 					 os.path.join(DATABASE, 'saltshd.lite.db-wal'),
+					 os.path.join(DATABASE, 'saltsrd.lite.db'),
+					 os.path.join(DATABASE, 'saltsrd.lite.db-shm'), 
+					 os.path.join(DATABASE, 'saltsrd.lite.db-wal'),
 					 os.path.join(ADDOND, 'script.trakt', 'queue.db'),
 					 os.path.join(HOME, 'cache', 'commoncache.db'),
 					 os.path.join(ADDOND, 'script.module.dudehere.routines', 'access.log'),
@@ -1964,7 +1969,8 @@ def clearCache(over=None):
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
-		(os.path.join(DATABASE,  'saltshd.lite.db'))]
+		(os.path.join(DATABASE,  'saltshd.lite.db')),
+		(os.path.join(DATABASE,  'saltsrd.lite.db'))]
 		
 	cachelist = [
 		(PROFILEADDONDATA),
@@ -2026,6 +2032,7 @@ def clearCache(over=None):
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
+			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
 		if len(files) > 0:
 			for item in files:
 				if os.path.exists(item):
