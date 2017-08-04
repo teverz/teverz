@@ -48,7 +48,7 @@ KEEPTRAKT      = wiz.getS('keeptrakt')
 TRAKTSAVE      = wiz.getS('traktlastsave')
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
-ORDER          = ['exodus', 'metalliq', 'salts', 'saltshd', 'saltsrd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
+ORDER          = ['exodus', 'covenant', 'metalliq', 'salts', 'saltshd', 'saltsrd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
 
 TRAKTID = { 
 	'exodus': {
@@ -63,6 +63,18 @@ TRAKTID = {
 		'default'  : 'trakt.user',
 		'data'     : ['trakt.user', 'trakt.refresh', 'trakt.token'],
 		'activate' : 'RunPlugin(plugin://plugin.video.exodus/?action=authTrakt)'},
+	'covenant': {
+		'name'     : 'Covenant',
+		'plugin'   : 'plugin.video.covenant',
+		'saved'    : 'covenant',
+		'path'     : os.path.join(ADDONS, 'plugin.video.covenant'),
+		'icon'     : os.path.join(ADDONS, 'plugin.video.covenant', 'icon.png'),
+		'fanart'   : os.path.join(ADDONS, 'plugin.video.covenant', 'fanart.jpg'),
+		'file'     : os.path.join(TRAKTFOLD, 'exodus_trakt'),
+		'settings' : os.path.join(ADDOND, 'plugin.video.covenant', 'settings.xml'),
+		'default'  : 'trakt.user',
+		'data'     : ['trakt.user', 'trakt.refresh', 'trakt.token'],
+		'activate' : 'RunPlugin(plugin://plugin.video.covenant/?action=authTrakt)'},
 	'metalliq': {
 		'name'     : 'MetalliQ',
 		'plugin'   : 'plugin.video.metalliq',

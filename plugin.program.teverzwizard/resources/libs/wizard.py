@@ -428,6 +428,7 @@ def getCacheSize():
 		(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'saltsrd.lite.db')),
@@ -463,6 +464,7 @@ def getCacheSize():
 			if INCLUDESPECTO == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db'))
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
+			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
@@ -1967,6 +1969,7 @@ def clearCache(over=None):
 		(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'saltshd.lite.db')),
@@ -2029,6 +2032,7 @@ def clearCache(over=None):
 			if INCLUDESPECTO == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db'))
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
+			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))

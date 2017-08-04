@@ -62,6 +62,7 @@
 		<setting id="includespecto" type="bool" label="Include Specto Cache DB: " default="true" enable="!eq(-7,false)" visible="!eq(-7,false)"/>
 		<setting id="includegenesis" type="bool" label="Include Genesis Cache DB: " default="true" enable="!eq(-8,false)" visible="!eq(-8,false)"/>
 		<setting id="includeonechan" type="bool" label="Include OneChannel Cache DB: " default="true" enable="!eq(-9,false)" visible="!eq(-9,false)"/>
+		<setting id="includecovenant" type="bool" label="Include Covenant Cache DB: " default="true" enable="!eq(-10,false)" visible="!eq(-10,false)"/>
 	</category>
 
 	<category label="Install Settings">
@@ -87,6 +88,7 @@
 		<setting type="lsep" label="Save Trakt Data:"/>
 		<setting id="keeptrakt" type="bool" label="Keep My Trakt Data" default="false"/>
 		<setting id="exodus" type="text" label="Exodus: " enable="false" default=""/>
+		<setting id="covenant" type="text" label="Covenant: " enable="false" default=""/>
 		<setting id="metalliq" type="text" label="Metalliq: " enable="false" default=""/>
 		<setting id="meta" type="text" label="Meta: " enable="false" default=""/>
 		<setting id="salts" type="text" label="Salts: " enable="false" default=""/>

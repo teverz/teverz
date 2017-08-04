@@ -716,15 +716,19 @@ def maintMenu(view=None):
 		includespe = 'true'
 		includegen = 'true'
 		includeexo = 'true'
+		includecov = 'true'
 		includeone = 'true'
 		includesal = 'true'
 		includeshd = 'true'
+		includesrd = 'true'
 	else:
 		includebob = 'true' if INCLUDEBOB     == 'true' else 'false'
 		includepho = 'true' if INCLUDEPHOENIX == 'true' else 'false'
 		includespe = 'true' if INCLUDESPECTO  == 'true' else 'false'
 		includegen = 'true' if INCLUDEGENESIS == 'true' else 'false'
 		includeexo = 'true' if INCLUDEEXODUS  == 'true' else 'false'
+		includecov = 'true' if INCLUDECOVENANT  == 'true' else 'false'
+		includesrd = 'true' if INCLUDESALTSRD  == 'true' else 'false'
 		includeone = 'true' if INCLUDEONECHAN == 'true' else 'false'
 		includesal = 'true' if INCLUDESALTS   == 'true' else 'false'
 		includeshd = 'true' if INCLUDESALTSHD == 'true' else 'false'
@@ -817,8 +821,10 @@ def maintMenu(view=None):
 		addFile('--- Include Phoenix: %s' % includepho.replace('true',on).replace('false',off), 'togglecache', 'includephoenix', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Specto: %s' % includespe.replace('true',on).replace('false',off), 'togglecache', 'includespecto', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Exodus: %s' % includeexo.replace('true',on).replace('false',off), 'togglecache', 'includeexodus', icon=ICONMAINT, themeit=THEME3)
+		addFile('--- Include Covenant: %s' % includecov.replace('true',on).replace('false',off), 'togglecache', 'includeexodus', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts: %s' % includesal.replace('true',on).replace('false',off), 'togglecache', 'includesalts', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts HD Lite: %s' % includeshd.replace('true',on).replace('false',off), 'togglecache', 'includesaltslite', icon=ICONMAINT, themeit=THEME3)
+		addFile('--- Include Salts RD Lite: %s' % includesrd.replace('true',on).replace('false',off), 'togglecache', 'includesaltslite', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include One Channel: %s' % includeone.replace('true',on).replace('false',off), 'togglecache', 'includeonechan', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Genesis: %s' % includegen.replace('true',on).replace('false',off), 'togglecache', 'includegenesis', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Enable All Video Addons', 'togglecache', 'true', icon=ICONMAINT, themeit=THEME3)
@@ -1602,7 +1608,7 @@ def createMenu(type, add, name):
 	return menu_items
 
 def toggleCache(state):
-	cachelist = ['includevideo', 'includeall', 'includebob', 'includephoenix', 'includespecto', 'includegenesis', 'includeexodus', 'includeonechan', 'includesalts', 'includesaltslite']
+	cachelist = ['includevideo', 'includeall', 'includebob', 'includephoenix', 'includespecto', 'includegenesis', 'includeexodus', 'includecovenant', 'includeonechan', 'includesalts', 'includesaltslite']
 	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Phoenix', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD']
 	if state in ['true', 'false']:
 		for item in cachelist:
