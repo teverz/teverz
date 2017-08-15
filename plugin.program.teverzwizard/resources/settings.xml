@@ -55,7 +55,7 @@
 		<setting id="includevideo" type="bool" label="Include Video Addons in Clear Cache: " default="true"/>
 		<setting id="includeall" type="bool" label="Include All Addons: " default="true" enable="!eq(-1,false)" visible="!eq(-1,false)"/>
 		<setting id="includebob" type="bool" label="Include Bob Cache DB: " default="true" enable="!eq(-2,false)" visible="!eq(-2,false)"/>
-		<setting id="includephoenix" type="bool" label="Include Phoenix Cache DB: " default="true" enable="!eq(-3,false)" visible="!eq(-3,false)"/>
+		<setting id="includebennu" type="bool" label="Include Bennu Cache DB: " default="true" enable="!eq(-3,false)" visible="!eq(-3,false)"/>
 		<setting id="includeexodus" type="bool" label="Include Exodus Cache DB: " default="true" enable="!eq(-4,false)" visible="!eq(-4,false)"/>
 		<setting id="includesalts" type="bool" label="Include Salts Cache DB: " default="true" enable="!eq(-5,false)" visible="!eq(-5,false)"/>
 		<setting id="includesaltslite" type="bool" label="Include Salts HD Lite Cache DB: " default="true" enable="!eq(-6,false)" visible="!eq(-6,false)"/>

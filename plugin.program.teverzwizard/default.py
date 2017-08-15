@@ -81,7 +81,7 @@ AUTONEXTRUN      = wiz.getS('nextautocleanup')
 INCLUDEVIDEO     = wiz.getS('includevideo')
 INCLUDEALL       = wiz.getS('includeall')
 INCLUDEBOB       = wiz.getS('includebob')
-INCLUDEPHOENIX   = wiz.getS('includephoenix')
+INCLUDEBENNU   = wiz.getS('includebennu')
 INCLUDESPECTO    = wiz.getS('includespecto')
 INCLUDEGENESIS   = wiz.getS('includegenesis')
 INCLUDEEXODUS    = wiz.getS('includeexodus')
@@ -715,18 +715,19 @@ def maintMenu(view=None):
 	wizlogsize = ': [COLOR red]Not Found[/COLOR]' if not os.path.exists(WIZLOG) else ": [COLOR green]%s[/COLOR]" % wiz.convertSize(os.path.getsize(WIZLOG))
 	if includeall == 'true':
 		includebob = 'true'
-		includepho = 'true'
+		includeben = 'true'
 		includespe = 'true'
 		includegen = 'true'
 		includeexo = 'true'
 		includecov = 'true'
+		includedel = 'true'
 		includeone = 'true'
 		includesal = 'true'
 		includeshd = 'true'
 		includesrd = 'true'
 	else:
 		includebob = 'true' if INCLUDEBOB     == 'true' else 'false'
-		includepho = 'true' if INCLUDEPHOENIX == 'true' else 'false'
+		includeben = 'true' if INCLUDEBENNU == 'true' else 'false'
 		includespe = 'true' if INCLUDESPECTO  == 'true' else 'false'
 		includegen = 'true' if INCLUDEGENESIS == 'true' else 'false'
 		includeexo = 'true' if INCLUDEEXODUS  == 'true' else 'false'
@@ -822,11 +823,11 @@ def maintMenu(view=None):
 	if includevid == 'true':
 		addFile('--- Include All Video Addons: %s' % includeall.replace('true',on).replace('false',off), 'togglecache', 'includeall', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Bob: %s' % includebob.replace('true',on).replace('false',off), 'togglecache', 'includebob', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Phoenix: %s' % includepho.replace('true',on).replace('false',off), 'togglecache', 'includephoenix', icon=ICONMAINT, themeit=THEME3)
+		addFile('--- Include Bennu: %s' % includeben.replace('true',on).replace('false',off), 'togglecache', 'includebennu', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Specto: %s' % includespe.replace('true',on).replace('false',off), 'togglecache', 'includespecto', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Exodus: %s' % includeexo.replace('true',on).replace('false',off), 'togglecache', 'includeexodus', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Covenant: %s' % includecov.replace('true',on).replace('false',off), 'togglecache', 'includecovenant', icon=ICONMAINT, themeit=THEME3)
-		addFile('--- Include Delorean: %s' % includecov.replace('true',on).replace('false',off), 'togglecache', 'includedelorean', icon=ICONMAINT, themeit=THEME3)
+		addFile('--- Include Delorean: %s' % includedel.replace('true',on).replace('false',off), 'togglecache', 'includedelorean', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts: %s' % includesal.replace('true',on).replace('false',off), 'togglecache', 'includesalts', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts HD Lite: %s' % includeshd.replace('true',on).replace('false',off), 'togglecache', 'includesaltslite', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts RD Lite: %s' % includesrd.replace('true',on).replace('false',off), 'togglecache', 'includesaltsrd', icon=ICONMAINT, themeit=THEME3)
@@ -1613,8 +1614,8 @@ def createMenu(type, add, name):
 	return menu_items
 
 def toggleCache(state):
-	cachelist = ['includevideo', 'includeall', 'includebob', 'includephoenix', 'includespecto', 'includegenesis', 'includeexodus', 'includecovenant', 'includedelorean', 'includeonechan', 'includesalts', 'includesaltslite', 'includesaltsrd']
-	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Phoenix', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include Covenant', 'Include Delorean', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD', 'Include Salts Lite RD']
+	cachelist = ['includevideo', 'includeall', 'includebob', 'includebennu', 'includespecto', 'includegenesis', 'includeexodus', 'includecovenant', 'includedelorean', 'includeonechan', 'includesalts', 'includesaltslite', 'includesaltsrd']
+	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Bennu', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include Covenant', 'Include Delorean', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD', 'Include Salts Lite RD']
 	if state in ['true', 'false']:
 		for item in cachelist:
 			wiz.setS(item, state)

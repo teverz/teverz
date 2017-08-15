@@ -92,7 +92,7 @@ COLOR2         = uservar.COLOR2
 INCLUDEVIDEO   = ADDON.getSetting('includevideo')
 INCLUDEALL     = ADDON.getSetting('includeall')
 INCLUDEBOB     = ADDON.getSetting('includebob')
-INCLUDEPHOENIX = ADDON.getSetting('includephoenix')
+INCLUDEBENNU = ADDON.getSetting('includebennu')
 INCLUDESPECTO  = ADDON.getSetting('includespecto')
 INCLUDEGENESIS = ADDON.getSetting('includegenesis')
 INCLUDEEXODUS  = ADDON.getSetting('includeexodus')
@@ -427,7 +427,7 @@ def getCacheSize():
 	PROFILEADDONDATA = os.path.join(PROFILE,'addon_data')
 	dbfiles   = [
 		(os.path.join(ADDONDATA, 'plugin.video.phstreams', 'cache.db')),
-		(os.path.join(ADDONDATA, 'plugin.video.bob', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.bob.unleashed', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
@@ -463,8 +463,8 @@ def getCacheSize():
 		files = []
 		if INCLUDEALL == 'true': files = dbfiles
 		else:
-			if INCLUDEBOB == 'true':     files.append(os.path.join(ADDONDATA, 'plugin.video.bob', 'cache.db'))
-			if INCLUDEPHOENIX == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.phstreams', 'cache.db'))
+			if INCLUDEBOB == 'true':     files.append(os.path.join(ADDONDATA, 'plugin.video.bob.unleashed', 'cache.db'))
+			if INCLUDEBENNU == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.bennu', 'cache.db'))
 			if INCLUDESPECTO == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db'))
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
@@ -1970,7 +1970,7 @@ def clearCache(over=None):
 	PROFILEADDONDATA = os.path.join(PROFILE,'addon_data')
 	dbfiles   = [
 		(os.path.join(ADDONDATA, 'plugin.video.phstreams', 'cache.db')),
-		(os.path.join(ADDONDATA, 'plugin.video.bob', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.bob.unleashed', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
@@ -2033,8 +2033,8 @@ def clearCache(over=None):
 		files = []
 		if INCLUDEALL == 'true': files = dbfiles
 		else:
-			if INCLUDEBOB == 'true':     files.append(os.path.join(ADDONDATA, 'plugin.video.bob', 'cache.db'))
-			if INCLUDEPHOENIX == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.phstreams', 'cache.db'))
+			if INCLUDEBOB == 'true':     files.append(os.path.join(ADDONDATA, 'plugin.video.bob.unleashed', 'cache.db'))
+			if INCLUDEBENNU == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.bennu', 'cache.db'))
 			if INCLUDESPECTO == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.specto', 'cache.db'))
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
