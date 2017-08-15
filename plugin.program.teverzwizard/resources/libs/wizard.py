@@ -96,9 +96,12 @@ INCLUDEPHOENIX = ADDON.getSetting('includephoenix')
 INCLUDESPECTO  = ADDON.getSetting('includespecto')
 INCLUDEGENESIS = ADDON.getSetting('includegenesis')
 INCLUDEEXODUS  = ADDON.getSetting('includeexodus')
+INCLUDECOVENANT  = ADDON.getSetting('includecovenant')
+INCLUDEDELOREAN  = ADDON.getSetting('includedelorean')
 INCLUDEONECHAN = ADDON.getSetting('includeonechan')
 INCLUDESALTS   = ADDON.getSetting('includesalts')
 INCLUDESALTSHD = ADDON.getSetting('includesaltslite')
+INCLUDESALTSRD = ADDON.getSetting('includesaltsrd')
 SHOWADULT      = ADDON.getSetting('adult')
 WIZDEBUGGING   = ADDON.getSetting('addon_debug')
 DEBUGLEVEL     = ADDON.getSetting('debuglevel')
@@ -429,6 +432,7 @@ def getCacheSize():
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'saltsrd.lite.db')),
@@ -465,10 +469,11 @@ def getCacheSize():
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
 			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
+			if INCLUDEDELOREAN == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
-			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
+			if INCLUDESALTSRD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
 		if len(files) > 0:
 			for item in files: totalsize = getSize(item, totalsize)
 		else: log("Clear Cache: Clear Video Cache Not Enabled", xbmc.LOGNOTICE)
@@ -1970,6 +1975,7 @@ def clearCache(over=None):
 		(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'saltshd.lite.db')),
@@ -2033,10 +2039,11 @@ def clearCache(over=None):
 			if INCLUDEGENESIS == 'true': files.append(os.path.join(ADDONDATA, 'plugin.video.genesis', 'cache.db'))
 			if INCLUDEEXODUS == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.exodus', 'cache.db'))
 			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
+			if INCLUDEDELOREAN == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
-			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
+			if INCLUDESALTSRD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
 		if len(files) > 0:
 			for item in files:
 				if os.path.exists(item):

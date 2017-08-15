@@ -63,6 +63,8 @@
 		<setting id="includegenesis" type="bool" label="Include Genesis Cache DB: " default="true" enable="!eq(-8,false)" visible="!eq(-8,false)"/>
 		<setting id="includeonechan" type="bool" label="Include OneChannel Cache DB: " default="true" enable="!eq(-9,false)" visible="!eq(-9,false)"/>
 		<setting id="includecovenant" type="bool" label="Include Covenant Cache DB: " default="true" enable="!eq(-10,false)" visible="!eq(-10,false)"/>
+		<setting id="includesdelorean" type="bool" label="Include The Delorean Cache DB: " default="true" enable="!eq(-11,false)" visible="!eq(-11,false)"/>
+		<setting id="includesaltsrd" type="bool" label="Include Salts RD Lite Cache DB: " default="true" enable="!eq(-12,false)" visible="!eq(-12,false)"/>
 	</category>
 
 	<category label="Install Settings">
@@ -89,6 +91,7 @@
 		<setting id="keeptrakt" type="bool" label="Keep My Trakt Data" default="false"/>
 		<setting id="exodus" type="text" label="Exodus: " enable="false" default=""/>
 		<setting id="covenant" type="text" label="Covenant: " enable="false" default=""/>
+		<setting id="delorean" type="text" label="The Delorean: " enable="false" default=""/>
 		<setting id="metalliq" type="text" label="Metalliq: " enable="false" default=""/>
 		<setting id="meta" type="text" label="Meta: " enable="false" default=""/>
 		<setting id="salts" type="text" label="Salts: " enable="false" default=""/>
@@ -105,8 +108,6 @@
 	<category label="Real Debrid Settings">
 		<setting type="lsep" label="Save Real Debrid Data:"/>
 		<setting id="keepdebrid" type="bool" label="Keep My Real Debrid Data" default="false"/>
-		<setting id="realexodus" type="text" label="Exodus: " enable="false" default=""/>
-		<setting id="realspecto" type="text" label="Specto: " enable="false" default=""/>
 		<setting id="urlresolver" type="text" label="Url Resolver: " enable="false" default=""/>
 		<setting id="debridlastsave" type="text" label="Last Time Real Debrid Saved: " enable="false" default=""/>
 	</category>

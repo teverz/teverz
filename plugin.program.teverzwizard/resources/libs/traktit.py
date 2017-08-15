@@ -48,7 +48,7 @@ KEEPTRAKT      = wiz.getS('keeptrakt')
 TRAKTSAVE      = wiz.getS('traktlastsave')
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
-ORDER          = ['exodus', 'covenant', 'metalliq', 'salts', 'saltshd', 'saltsrd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
+ORDER          = ['exodus', 'covenant', 'delorean', 'metalliq', 'salts', 'saltshd', 'saltsrd', 'velocity', 'velocitykids', 'meta', 'royalwe', 'specto', 'trakt']
 
 TRAKTID = { 
 	'exodus': {
@@ -70,11 +70,23 @@ TRAKTID = {
 		'path'     : os.path.join(ADDONS, 'plugin.video.covenant'),
 		'icon'     : os.path.join(ADDONS, 'plugin.video.covenant', 'icon.png'),
 		'fanart'   : os.path.join(ADDONS, 'plugin.video.covenant', 'fanart.jpg'),
-		'file'     : os.path.join(TRAKTFOLD, 'exodus_trakt'),
+		'file'     : os.path.join(TRAKTFOLD, 'covenant_trakt'),
 		'settings' : os.path.join(ADDOND, 'plugin.video.covenant', 'settings.xml'),
 		'default'  : 'trakt.user',
 		'data'     : ['trakt.user', 'trakt.refresh', 'trakt.token'],
 		'activate' : 'RunPlugin(plugin://plugin.video.covenant/?action=authTrakt)'},
+	'delorean': {
+		'name'     : 'The Delorean',
+		'plugin'   : 'plugin.video.TheDeLorean',
+		'saved'    : 'delorean',
+		'path'     : os.path.join(ADDONS, 'plugin.video.TheDeLorean'),
+		'icon'     : os.path.join(ADDONS, 'plugin.video.TheDeLorean', 'icon.png'),
+		'fanart'   : os.path.join(ADDONS, 'plugin.video.TheDeLorean', 'fanart.jpg'),
+		'file'     : os.path.join(TRAKTFOLD, 'delorean_trakt'),
+		'settings' : os.path.join(ADDOND, 'plugin.video.TheDeLorean', 'settings.xml'),
+		'default'  : 'trakt.user',
+		'data'     : ['trakt.user', 'trakt.refresh', 'trakt.token'],
+		'activate' : 'RunPlugin(plugin://plugin.video.TheDeLorean/?action=authTrakt)'},
 	'metalliq': {
 		'name'     : 'MetalliQ',
 		'plugin'   : 'plugin.video.metalliq',
