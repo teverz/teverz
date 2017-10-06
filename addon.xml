@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.4" provider-name="Teverz">
+    <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.5" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
