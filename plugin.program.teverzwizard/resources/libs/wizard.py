@@ -437,6 +437,7 @@ def getCacheSize():
 		(os.path.join(ADDONDATA, 'plugin.video.poseidon', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
+		(os.path.join(DATABASE,  'DEATHScache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'saltsrd.lite.db')),
 		(os.path.join(DATABASE,  'saltshd.lite.db'))]
@@ -478,7 +479,7 @@ def getCacheSize():
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
 			if INCLUDESALTSRD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
-			if INCLUDEDSTREAMS == 'true': files.append(os.path.join(DATABASE,  'saltscache.db'))
+			if INCLUDEDSTREAMS == 'true': files.append(os.path.join(DATABASE,  'DEATHScache.db'))
 		if len(files) > 0:
 			for item in files: totalsize = getSize(item, totalsize)
 		else: log("Clear Cache: Clear Video Cache Not Enabled", xbmc.LOGNOTICE)
@@ -1257,6 +1258,9 @@ def backUpOptions(type, name=""):
 					 os.path.join(DATABASE, 'saltscache.db'), 
 					 os.path.join(DATABASE, 'saltscache.db-shm'), 
 					 os.path.join(DATABASE, 'saltscache.db-wal'),
+					 os.path.join(DATABASE, 'DEATHScache.db'), 
+					 os.path.join(DATABASE, 'DEATHScache.db-shm'), 
+					 os.path.join(DATABASE, 'DEATHScache.db-wal'),
 					 os.path.join(DATABASE, 'saltshd.lite.db'),
 					 os.path.join(DATABASE, 'saltshd.lite.db-shm'), 
 					 os.path.join(DATABASE, 'saltshd.lite.db-wal'),
@@ -1984,6 +1988,7 @@ def clearCache(over=None):
 		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
+		(os.path.join(DATABASE,  'DEATHScache.db')),
 		(os.path.join(DATABASE,  'saltshd.lite.db')),
 		(os.path.join(DATABASE,  'saltsrd.lite.db'))]
 		
@@ -2049,6 +2054,7 @@ def clearCache(over=None):
 			if INCLUDEDELOREAN == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
+			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'DEATHScache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
 			if INCLUDESALTSRD == 'true': files.append(os.path.join(DATABASE,  'saltsrd.lite.db'))
 		if len(files) > 0:
