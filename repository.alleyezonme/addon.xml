@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.alleyezonme" name="All Eyez On Me repository" version="1.1" provider-name="Daffy">
+	<extension point="xbmc.addon.repository" name="All Eyez On Me Add-on Repository">
+		<info compressed="false">http://daffyslist.com/addons.xml</info>
+		<checksum>http://daffyslist.com/addons.xml.md5</checksum>
+		<datadir zip="true">http://daffyslist.com/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All eyez on me addon and other addons hosted here.</summary>
+		<description>Download and install Alleyezonme addon and others, if you want your addon/wizard/build adding, get in touch.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

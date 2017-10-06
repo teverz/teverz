@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Diamond-XXX-Addons-and-Repo-Installer" name="[COLOR crimson]D[COLOR silver]iamond XXX Addons And Repo Installer[/COLOR]" version="69.1.4" provider-name="Diamond Wizard">
+<extension point="xbmc.addon.repository" name="XXX Addons and Repos Installer">
+<dir>
+<info compressed="false">https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml</info>
+<checksum>https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml.md5</checksum>
+<datadir zip="true">https://github.com/Vashiel/repository.adulthideout/raw/master/zips</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/superfreakrepos/megatron/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/superfreakrepos/megatron/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/superfreakrepos/megatron/master/</datadir>
+</dir>
+<dir>
+<info compressed="false">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml</info>
+<checksum>http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml.md5</checksum>
+<datadir zip="true">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster</datadir>
+</dir>
+<dir>
+<info compressed="false">http://r.ninjasys.uk/addons.xml</info>
+<checksum>http://r.ninjasys.uk/addons.xml.md5</checksum>
+<datadir zip="true">http://r.ninjasys.uk/zips</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/zips/</datadir>
+</dir>
+<dir>
+<info compressed="false">http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/file/addons.xml</info>
+<checksum>http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/file/addons.xml.md5</checksum>
+<datadir zip="true">http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/zip/</datadir>
+</dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond XXX Repo</summary>
+<description lang="en">Diamond XXX Repo List, Bought to you by Diamond Wizard,
+Diamond Multi Source Repo List, Doses not edit, repack, store or offer for download any of the addons listed, they are downloaded from 3rd party sources outside of my control.</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+</extension>
+</addon>

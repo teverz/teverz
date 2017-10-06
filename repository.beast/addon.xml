@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.beast" name="[B]Beast Repository[/B]" version="1.14" provider-name="Titan Thanos">
+<extension point="xbmc.addon.repository" name="The Beast repository">
+	<info compressed="false">https://thebeast2.com/repo2/addons.xml</info>
+	<checksum>https://thebeast2.com/repo2/addons.xml.md5</checksum>
+	<datadir zip="true">https://thebeast2.com/repo2/</datadir>
+</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Beast Repository</summary>
+    <description lang="en">Please visit https://thebeast1.com and https://thebeast2.com click on some of the adverts to help with the server costs. Thank you.</description>
+    <platform>all</platform>
+	<forum>http://koditalk.org/</forum>
+    <website>https://thebeast2.com/</website>
+  <assets>
+	<icon>icon.png</icon>
+	<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>

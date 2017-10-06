@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="frenchdj.repository" name="frenchdj repository" version="0.0.1" provider-name="frenchdj">
+	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
+		<info compressed="false">http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/frenchdj/frenchdj.repository/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>frenchdj Addon</summary>
+		<description>frenchdj addons repositorio</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="plugin.program.teverzwizard" name="[COLOR blue]Teverz Wizard[/COLOR]" version="1.1.4" provider-name="Teverz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -85,6 +99,152 @@
 	</extension>
 </addon>
 
+<addon id="repository.alleyezonme" name="All Eyez On Me repository" version="1.1" provider-name="Daffy">
+	<extension point="xbmc.addon.repository" name="All Eyez On Me Add-on Repository">
+		<info compressed="false">http://daffyslist.com/addons.xml</info>
+		<checksum>http://daffyslist.com/addons.xml.md5</checksum>
+		<datadir zip="true">http://daffyslist.com/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All eyez on me addon and other addons hosted here.</summary>
+		<description>Download and install Alleyezonme addon and others, if you want your addon/wizard/build adding, get in touch.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.beast" name="[B]Beast Repository[/B]" version="1.14" provider-name="Titan Thanos">
+<extension point="xbmc.addon.repository" name="The Beast repository">
+	<info compressed="false">https://thebeast2.com/repo2/addons.xml</info>
+	<checksum>https://thebeast2.com/repo2/addons.xml.md5</checksum>
+	<datadir zip="true">https://thebeast2.com/repo2/</datadir>
+</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Beast Repository</summary>
+    <description lang="en">Please visit https://thebeast1.com and https://thebeast2.com click on some of the adverts to help with the server costs. Thank you.</description>
+    <platform>all</platform>
+	<forum>http://koditalk.org/</forum>
+    <website>https://thebeast2.com/</website>
+  <assets>
+	<icon>icon.png</icon>
+	<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+
+<addon id="repository.colossus" name="[COLOR gold]Colossus Repository[/COLOR]" version="999.999.6" provider-name="Colossal">
+    <extension point="xbmc.addon.repository" name="[COLOR gold]Colossus Repository[/COLOR]">
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus.common/master/</datadir>
+    </dir>
+        <info compressed="false">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Colossal1/repository.colossus/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Colossal1/repository.colossus/master/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Home Of 3rd Party Addons</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.Diamond-XXX-Addons-and-Repo-Installer" name="[COLOR crimson]D[COLOR silver]iamond XXX Addons And Repo Installer[/COLOR]" version="69.1.4" provider-name="Diamond Wizard">
+<extension point="xbmc.addon.repository" name="XXX Addons and Repos Installer">
+<dir>
+<info compressed="false">https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml</info>
+<checksum>https://github.com/Vashiel/repository.adulthideout/raw/master/addons.xml.md5</checksum>
+<datadir zip="true">https://github.com/Vashiel/repository.adulthideout/raw/master/zips</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/superfreakrepos/megatron/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/superfreakrepos/megatron/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/superfreakrepos/megatron/master/</datadir>
+</dir>
+<dir>
+<info compressed="false">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml</info>
+<checksum>http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml.md5</checksum>
+<datadir zip="true">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster</datadir>
+</dir>
+<dir>
+<info compressed="false">http://r.ninjasys.uk/addons.xml</info>
+<checksum>http://r.ninjasys.uk/addons.xml.md5</checksum>
+<datadir zip="true">http://r.ninjasys.uk/zips</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/zips/</datadir>
+</dir>
+<dir>
+<info compressed="false">http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/file/addons.xml</info>
+<checksum>http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/file/addons.xml.md5</checksum>
+<datadir zip="true">http://repo.rubyjewelwizard.com/repo/diamond/xxx_installer/zip/</datadir>
+</dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond XXX Repo</summary>
+<description lang="en">Diamond XXX Repo List, Bought to you by Diamond Wizard,
+Diamond Multi Source Repo List, Doses not edit, repack, store or offer for download any of the addons listed, they are downloaded from 3rd party sources outside of my control.</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+</extension>
+</addon>
+
+    <addon id="repository.GenTec" name="[COLOR red]GenTec[/COLOR] [COLOR yellow]Repository[/COLOR]" version="1.1.1" provider-name="Charlie Tec">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="GenTec">
+            <info compressed="false">https://raw.githubusercontent.com/JACKEVOLVE/gentec/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/JACKEVOLVE/gentec/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/JACKEVOLVE/gentec/master/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Install My Addons</summary>
+            <description>Download and install addons GenTec Builds</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.Goliath" name="Goliaths Add-ons repository" version="1.4" provider-name="Goliath">
+	<extension point="xbmc.addon.repository" name="Goliaths Repository">
+	<dir>
+        <info compressed="false">https://github.com/zqfaen/tva-common/raw/master/addons.xml</info>
+        <checksum>https://github.com/zqfaen/tva-common/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/zqfaen/tva-common/raw/master/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+	</dir>
+		<info compressed="false">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Home of Goliaths Addons</summary>
+		<description>Download and install all unofficial Add-ons from Goliath</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.kodirevolution" name="Kodi Revolution" version="1.0.0" provider-name="Kodi Revolution">
+	<extension point="xbmc.addon.repository" name="Kodi Revolution">
+		<info compressed="false">http://mykodirevolution.com/DeLorean/files/addons.xml</info>
+		<checksum>http://mykodirevolution.com/DeLorean/files/addons.xml.md5</checksum>
+		<datadir zip="true">http://mykodirevolution.com/DeLorean/files/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description>This is the Kodi Revolution repository.  Home of The DeLorean Add-on.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
     <addon id="repository.mic" name="MiC Repository" version="1.0.1" provider-name="MiC">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -107,6 +267,82 @@
     </extension>
 </addon>
 
+<addon id="repository.noobsandnerds" name="noobsandnerds Repository" version="1.2" provider-name="noobsandnerds">
+	<extension point="xbmc.addon.repository" name="noobsandnerds Repository">
+		<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/noobsandnerds/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Home of The Community Portal</summary>
+		<description>Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.poseidon" name="Poseidon Repo" version="1.0.1" provider-name="Soulless">
+	<extension point="xbmc.addon.repository" name="Poseidon Repo">
+		<info compressed="false">https://raw.githubusercontent.com/S0u77eSS/noreviews/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/S0u77eSS/noreviews/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/S0u77eSS/noreviews/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Poseidon Repo</summary>
+		<description>Download and install Poseidon</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="0.2" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
+		<info compressed="false">http://mullafabz.net.rw/Plugins/addons.xml</info>
+		<checksum>http://mullafabz.net.rw/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mullafabz.net.rw/Plugins/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All types of Contents</summary>
+		<description>Find any type of content</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+    <addon id="repository.sanctuary" name="Sanctuary" version="1.0.1" provider-name="Sanctuary">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Sanctuary">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
+            </dir>
+            <dir>
+            <info compressed="false">https://raw.githubusercontent.com/sanctuaryaddon/sanctuary/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/sanctuaryaddon/sanctuary/master/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/sanctuaryaddon/sanctuary/master/_repo/</datadir>
+            <hashes>false</hashes>
+            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>communal addon repo</summary>
+            <description>Sanctuary Repo</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.supremacy" name="supremacy" version="1.1" provider-name="supremacy">
+	<extension point="xbmc.addon.repository" name="supremacy">
+		<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
+		<checksum>http://supremacy.org.uk/zip/plugin/addons.xml.md5</checksum>
+		<datadir zip="true">http://supremacy.org.uk/zip/plugin/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>video addon for supremacy</summary>
+		<description>Latest Addon Updates For Supremacy Repository</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
     <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.5" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
@@ -122,5 +358,25 @@
             <description>Great Repo for a great wizard and SALTS HD and SALTS RD</description>
             <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.48"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+	<import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
+  </extension>
 </addon>
 </addons>
