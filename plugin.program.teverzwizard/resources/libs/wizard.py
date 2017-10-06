@@ -96,6 +96,7 @@ INCLUDEBENNU = ADDON.getSetting('includebennu')
 INCLUDESPECTO  = ADDON.getSetting('includespecto')
 INCLUDEGENESIS = ADDON.getSetting('includegenesis')
 INCLUDEEXODUS  = ADDON.getSetting('includeexodus')
+INCLUDEELYSIUM  = ADDON.getSetting('includeelysium')
 INCLUDECOVENANT  = ADDON.getSetting('includecovenant')
 INCLUDEPOSEIDON  = ADDON.getSetting('includeposeidon')
 INCLUDEDELOREAN  = ADDON.getSetting('includedelorean')
@@ -436,6 +437,7 @@ def getCacheSize():
 		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.poseidon', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.elysium', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'DEATHScache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
@@ -475,6 +477,7 @@ def getCacheSize():
 			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
 			if INCLUDEPOSEIDON == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.poseidon', 'cache.db'))
 			if INCLUDEDELOREAN == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db'))
+			if INCLUDEELYSIUM == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.elysium', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTSHD == 'true': files.append(os.path.join(DATABASE,  'saltshd.lite.db'))
@@ -1986,6 +1989,7 @@ def clearCache(over=None):
 		(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.poseidon', 'cache.db')),
 		(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db')),
+		(os.path.join(ADDONDATA, 'plugin.video.elysium', 'cache.db')),
 		(os.path.join(DATABASE,  'onechannelcache.db')),
 		(os.path.join(DATABASE,  'saltscache.db')),
 		(os.path.join(DATABASE,  'DEATHScache.db')),
@@ -2052,6 +2056,7 @@ def clearCache(over=None):
 			if INCLUDECOVENANT == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.covenant', 'cache.db'))
 			if INCLUDEPOSEIDON == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.poseidon', 'cache.db'))
 			if INCLUDEDELOREAN == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.TheDeLorean', 'cache.db'))
+			if INCLUDEELYSIUM == 'true':  files.append(os.path.join(ADDONDATA, 'plugin.video.elysium', 'cache.db'))
 			if INCLUDEONECHAN == 'true': files.append(os.path.join(DATABASE,  'onechannelcache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'saltscache.db'))
 			if INCLUDESALTS == 'true':   files.append(os.path.join(DATABASE,  'DEATHScache.db'))

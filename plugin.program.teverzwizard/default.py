@@ -93,6 +93,7 @@ INCLUDESALTS     = wiz.getS('includesalts')
 INCLUDESALTSHD   = wiz.getS('includesaltslite')
 INCLUDESALTSRD   = wiz.getS('includesaltsrd')
 INCLUDEDSTREAMS   = wiz.getS('includedstreams')
+INCLUDEELYSIUM   = wiz.getS('includeelysium')
 SEPERATE         = wiz.getS('seperate')
 NOTIFY           = wiz.getS('notify')
 NOTEID           = wiz.getS('noteid')
@@ -724,6 +725,7 @@ def maintMenu(view=None):
 		includecov = 'true'
 		includepos = 'true'
 		includedel = 'true'
+		includeely = 'true'
 		includeone = 'true'
 		includesal = 'true'
 		includeshd = 'true'
@@ -738,11 +740,13 @@ def maintMenu(view=None):
 		includecov = 'true' if INCLUDECOVENANT  == 'true' else 'false'
 		includepos = 'true' if INCLUDEPOSEIDON  == 'true' else 'false'
 		includedel = 'true' if INCLUDEDELOREAN  == 'true' else 'false'
+		includedel = 'true' if INCLUDEELYSIUM  == 'true' else 'false'
 		includesrd = 'true' if INCLUDESALTSRD  == 'true' else 'false'
 		includeone = 'true' if INCLUDEONECHAN == 'true' else 'false'
 		includesal = 'true' if INCLUDESALTS   == 'true' else 'false'
 		includeshd = 'true' if INCLUDESALTSHD == 'true' else 'false'
 		includeds = 'true' if INCLUDEDSTREAMS == 'true' else 'false'
+		includeely = 'true' if INCLUDEELYSIUM == 'true' else 'false'
 	sizepack   = wiz.getSize(PACKAGES)
 	sizethumb  = wiz.getSize(THUMBS)
 	sizecache  = wiz.getCacheSize()
@@ -835,6 +839,7 @@ def maintMenu(view=None):
 		addFile('--- Include Covenant: %s' % includecov.replace('true',on).replace('false',off), 'togglecache', 'includecovenant', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Poseidon: %s' % includepos.replace('true',on).replace('false',off), 'togglecache', 'includeposeidon', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Delorean: %s' % includedel.replace('true',on).replace('false',off), 'togglecache', 'includedelorean', icon=ICONMAINT, themeit=THEME3)
+		addFile('--- Include Elysium: %s' % includeely.replace('true',on).replace('false',off), 'togglecache', 'includeelysium', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts: %s' % includesal.replace('true',on).replace('false',off), 'togglecache', 'includesalts', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts HD Lite: %s' % includeshd.replace('true',on).replace('false',off), 'togglecache', 'includesaltslite', icon=ICONMAINT, themeit=THEME3)
 		addFile('--- Include Salts RD Lite: %s' % includesrd.replace('true',on).replace('false',off), 'togglecache', 'includesaltsrd', icon=ICONMAINT, themeit=THEME3)
@@ -1622,8 +1627,8 @@ def createMenu(type, add, name):
 	return menu_items
 
 def toggleCache(state):
-	cachelist = ['includevideo', 'includeall', 'includebob', 'includebennu', 'includespecto', 'includegenesis', 'includeexodus', 'includecovenant', 'includeposeidon', 'includedelorean', 'includeonechan', 'includesalts', 'includesaltslite', 'includesaltsrd', 'includedstreams']
-	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Bennu', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include Covenant', 'Include Poseidon', 'Include Delorean', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD', 'Include Salts Lite RD', 'Include Death Streams']
+	cachelist = ['includevideo', 'includeall', 'includebob', 'includebennu', 'includespecto', 'includegenesis', 'includeexodus', 'includecovenant', 'includeposeidon', 'includedelorean', 'includeelysium' 'includeonechan', 'includesalts', 'includesaltslite', 'includesaltsrd', 'includedstreams']
+	titlelist = ['Include Video Addons', 'Include All Addons', 'Include Bob', 'Include Bennu', 'Include Specto', 'Include Genesis', 'Include Exodus', 'Include Covenant', 'Include Poseidon', 'Include Delorean', 'Include Elysium', 'Include One Channel', 'Include Salts', 'Include Salts Lite HD', 'Include Salts Lite RD', 'Include Death Streams']
 	if state in ['true', 'false']:
 		for item in cachelist:
 			wiz.setS(item, state)
