@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="frenchdj.repository" name="frenchdj repository" version="0.0.1" provider-name="frenchdj">
-	<extension point="xbmc.addon.repository" name="frenchdj Add-on Repository">
-		<info compressed="false">http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml</info>
-		<checksum>http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/frenchdj/frenchdj.repository/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>frenchdj Addon</summary>
-		<description>frenchdj addons repositorio</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
+<addon id="plugin.program.teverzwizard" name="[COLOR gold]Teverz [COLOR blue]Wizard[/COLOR]" version="2.0" provider-name="[B][I][COLOR blue]Teverz[/COLOR][/I][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>program executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Installer for [COLOR gold]Teverz[/COLOR] Builds</summary>
+    <description lang="en">This Wizard allows you to install the latest version of builds from [B][COLOR cyan]Teverz[/COLOR][/B].  It also provides Maintenance, Tools and Tweaks sections to help you keep your Media Center running as smoothly as possible.</description>
+    <disclaimer lang="en">For support, follow me on Twitter at:  [B][COLOR blue]@TeverzMe[/COLOR][/B]</disclaimer>
+    <platform>all</platform>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.6" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.7" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -30,35 +33,27 @@
             <datadir zip="true">https://github.com/teverz/teverz/raw/master/_repo/</datadir>
             <hashes>false</hashes>
 		</dir>
+		<dir>
+		<info compressed="false">http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml</info>
+		<checksum>http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/frenchdj/frenchdj.repository/master/repo/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz2/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teverz/teverz2/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teverz/teverz2/master/zips/</datadir>		
+		</dir>
+		<dir>
+			<info compressed="false">http://www.projectdaddon.com/plugins/addons.xml</info>
+		    <checksum>http://www.projectdaddon.com/plugins/addons.xml.md5</checksum>
+		    <datadir zip="true">http://www.projectdaddon.com/plugins/</datadir>
+		</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
             <summary>Contains Covenant</summary>
             <description>Teverz Repo</description>
             <platform>all</platform>
     </extension>
-</addon>
-
-<addon id="video.lazyman.nhl.tv" name="LazyMan NHL.tv" version="1.0.7" provider-name="lazyman">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <!--<import addon="script.module.pytz" version="2014.2"/>-->
-    <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">LazyMan NHL.tv</summary>
-    <description lang="en">http://reddit.com/r/lazyman</description>
-    <license>GNU General Public License, v2</license>
-    <language/>
-    <forum>http://reddit.com/r/lazyman</forum>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-  </extension>
 </addon>
 
 <addon id="plugin.video.covenant" version="1.1.29" name="Covenant" provider-name="Covenant">
@@ -134,116 +129,4 @@
 	</extension>
 </addon>
 
-<addon id="script.module.liveresolver" 
-     name="LiveResolver" 
-     version="0.1.48" 
-     provider-name="natko1412">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-	<import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.addon.common" version="2.0.0" />
-
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
-    <description lang="en"></description>    
-  </extension>
-</addon>
-
-<addon id="script.module.metahandler" 
-     name="metahandler" 
-     version="3.0.2" 
-     provider-name="Eldorado, jsergio">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="script.module.urlresolver" name="URLResolver" version="4.0.09" provider-name="Eldorado, tknorris, jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-        <source>https://github.com/jsergio123/script.module.urlresolver</source>
-	</extension>
-</addon>
-
-<addon id="video.lazyman.nhl.tv" name="LazyMan NHL.tv" version="1.0.7" provider-name="lazyman">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-    <!--<import addon="script.module.pytz" version="2014.2"/>-->
-    <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">LazyMan NHL.tv</summary>
-    <description lang="en">http://reddit.com/r/lazyman</description>
-    <license>GNU General Public License, v2</license>
-    <language/>
-    <forum>http://reddit.com/r/lazyman</forum>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.module.requests"
-       name="requests"
-       version="2.18.4"
-       provider-name="kennethreitz">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.urllib3" version="1.22"/>
-    <import addon="script.module.chardet" version="3.0.4"/>
-    <import addon="script.module.idna" version="2.6"/>
-    <import addon="script.module.certifi" version="2017.07.27.1"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Python HTTP for Humans</summary>
-    <description lang="en_GB">Packed for KODI from https://github.com/requests/requests</description>
-    <platform>all</platform>
-    <language></language>
-    <license>Apache2</license>
-    <forum></forum>
-    <website>http://python-requests.org</website>
-    <source>https://github.com/beenje/script.module.requests</source>
-    <email>beenje AT gmail.com</email>
-  </extension>
-</addon>
 </addons>
