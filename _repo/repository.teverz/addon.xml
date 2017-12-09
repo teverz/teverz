@@ -10,15 +10,15 @@
 			<datadir zip="true">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/</datadir>
 		</dir>
 		<dir>
-            <info compressed="false">https://github.com/teverz/teverz/raw/master/_repo/addons.xml</info>
-            <checksum>https://github.com/teverz/teverz/raw/master/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/teverz/teverz/raw/master/_repo/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teverz/teverz/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
             <hashes>false</hashes>
 		</dir>
 		<dir>
-		<info compressed="false">http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml</info>
-		<checksum>http://raw.github.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/frenchdj/frenchdj.repository/master/repo/</datadir>
+		<info compressed="false">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml</info>
+		<checksum>http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/repo/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz2/master/zips/addons.xml</info>
