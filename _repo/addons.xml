@@ -17,11 +17,11 @@
   </extension>
 </addon>
 
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.9" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.10" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
-    <extension point="xbmc.addon.repository" name="[COLOR blue]Teverz Addon Repo[/COLOR]">
+        <extension point="xbmc.addon.repository" name="[COLOR blue]Teverz Addon Repo[/COLOR]">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/noobsandnerds/modules4all/master/zips/addons.xml.md5</checksum>
@@ -29,7 +29,7 @@
 		</dir>
 		<dir>
             <info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/teverz/teverz/master/addons.xml.md5</checksum>
+            <checksum>https://raw.githubusercontent.com/teverz/teverz/master//_repo/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
             <hashes>false</hashes>
 		</dir>
