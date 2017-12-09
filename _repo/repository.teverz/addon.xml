@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.8" provider-name="Teverz">
+    <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.9" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -24,6 +24,11 @@
 			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz2/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/teverz/teverz2/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/teverz/teverz2/master/zips/</datadir>		
+		</dir>
+		<dir>
+		    <info compressed="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz</info>
+            <checksum>http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz.md5</checksum>
+            <datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">http://www.projectdaddon.com/plugins/addons.xml</info>
