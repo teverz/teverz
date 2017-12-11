@@ -106,13 +106,15 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.covenant" version="1.1.29" name="Covenant" provider-name="Covenant">
+<addon id="plugin.video.covenant" version="1.1.30" name="Covenant" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="repository.colossus" />
 		<import addon="script.module.covenant" />
 		<import addon="script.covenant.artwork" version="1.0.0" />
 		<import addon="script.covenant.metadata" version="1.0.0" />
 		<import addon="script.module.urlresolver" version="3.0.0" />
+		<import addon="script.module.requests" />
 		<import addon="script.module.metahandler" version="1.0.0" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="covenant.py">
@@ -167,10 +169,9 @@
 	</extension>
 </addon>
 
-<addon id="script.module.covenant" name="Covenant Module" version="1.00.024" provider-name="Covenant">
+<addon id="script.module.covenant" name="Covenant Module" version="1.00.025" provider-name="Covenant">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.requests" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
@@ -178,5 +179,6 @@
 		<summary lang="en">Covenant</summary>
 	</extension>
 </addon>
+
 
 </addons>
