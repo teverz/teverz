@@ -16,7 +16,8 @@
 	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.15" provider-name="Teverz">
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.16" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -51,11 +52,6 @@
 			<info compressed="false">https://tmbkodi.com/zips/addons.xml</info>
 			<checksum>https://tmbkodi.com/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://tmbkodi.com/zips/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">http://www.projectdaddon.com/plugins/addons.xml</info>
-		    <checksum>http://www.projectdaddon.com/plugins/addons.xml.md5</checksum>
-		    <datadir zip="true">http://www.projectdaddon.com/plugins/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
