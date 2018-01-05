@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.16" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.17" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -31,9 +31,9 @@
       <datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
 	  </dir>
 		<dir>
-			<info compressed="false">https://tmbkodi.com/zips/addons.xml</info>
-			<checksum>https://tmbkodi.com/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://tmbkodi.com/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/</datadir>		
 		</dir>
 		<dir>
 			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
@@ -62,7 +62,7 @@
 		</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>Contains Covenant</summary>
+            <summary>Contains a crap load of stuff you might need</summary>
             <description>Teverz Repo</description>
             <platform>all</platform>
     </extension>
