@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.teverzwizard" name="[COLOR gold]Teverz [COLOR blue]Wizard[/COLOR]" version="2.0" provider-name="[B][I][COLOR blue]Teverz[/COLOR][/I][/B]">
+<addon id="plugin.program.teverzwizard" name="[COLOR gold]Teverz [COLOR blue]Wizard[/COLOR]" version="2.1" provider-name="[B][I][COLOR blue]Teverz[/COLOR][/I][/B]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -16,7 +16,6 @@
 	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
-<?xml version="1.0" encoding="UTF-8"?>
 <addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.0.17" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
