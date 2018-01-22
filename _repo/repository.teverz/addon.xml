@@ -60,7 +60,7 @@
 			<checksum>https://github.com/OpenELEQ/repository.q/raw/master/openeleq-addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.github.com/OpenELEQ/repository.q/master/zips/</datadir>
 		</dir>
-		<dir compressed="true"">
+		<dir compressed="true">
 			<info compressed="false">https://raw.github.com/jdf76/repository/master/addons.xml</info>
 			<checksum>https://raw.github.com/jdf76/repository/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.github.com/jdf76/repository/master/zips/</datadir>
