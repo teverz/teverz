@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.0" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.1" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -64,6 +64,11 @@
 			<info compressed="false">https://raw.github.com/jdf76/repository/master/addons.xml</info>
 			<checksum>https://raw.github.com/jdf76/repository/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.github.com/jdf76/repository/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
 		</dir>
         </extension>
         <extension point="xbmc.addon.metadata">
