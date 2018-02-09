@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.1" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.2" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -46,9 +46,9 @@
 			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
 		</dir>
 		<dir>
-		    <info compressed="false">http://98476.theunjudged.com/Illuminati/addons.xml</info>
-		    <checksum>http://98476.theunjudged.com/Illuminati/addons.xml.md5</checksum>
-		    <datadir zip="true">http://98476.theunjudged.com/Illuminati/</datadir>
+		    <info compressed="false">http://theunjudged.com/ATrain/repo/addons.xml</info>
+		    <checksum>http://theunjudged.com/ATrain/repo/addons.xml.md5</checksum>
+		    <datadir zip="true">http://theunjudged.com/ATrain/repo/</datadir>
 		</dir>
 		<dir>
 		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
