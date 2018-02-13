@@ -16,7 +16,7 @@
 	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.2" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.3" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -37,16 +37,16 @@
 		<checksum>http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
 		<datadir zip="true">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/repo/</datadir>
 		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/teverz/blamo/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teverz/blamo/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teverz/blamo/master/zips/</datadir>		
+		<<dir>
+			<info compressed="false">http://theunjudged.com/Blamo/addons.xml</info>
+			<checksum>http://theunjudged.com/Blamo/addons.xml.md5</checksum>
+			<datadir zip="true">http://theunjudged.com/Blamo/</datadir>		
 		</dir>
 		<dir>
-		<info compressed="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz</info>
-      <checksum>http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz.md5</checksum>
-      <datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
-	  </dir>
+			<info compressed="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz</info>
+			<checksum>http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz.md5</checksum>
+			<datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
+		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml.md5</checksum>
