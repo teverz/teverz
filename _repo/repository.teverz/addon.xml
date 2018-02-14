@@ -13,14 +13,13 @@
             <info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
-            <hashes>false</hashes>
 		</dir>
 		<dir>
-		<info compressed="false">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml</info>
-		<checksum>http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/repo/</datadir>
+			<info compressed="false">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml</info>
+			<checksum>http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/repo/</datadir>
 		</dir>
-		<<dir>
+		<dir>
 			<info compressed="false">http://theunjudged.com/Blamo/addons.xml</info>
 			<checksum>http://theunjudged.com/Blamo/addons.xml.md5</checksum>
 			<datadir zip="true">http://theunjudged.com/Blamo/</datadir>		
@@ -77,3 +76,5 @@
             <platform>all</platform>
     </extension>
 </addon>
+
+
