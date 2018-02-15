@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.4" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.5" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -20,16 +20,6 @@
 			<datadir zip="true">http://raw.githubusercontent.com/frenchdj/frenchdj.repository/master/repo/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">http://theunjudged.com/Blamo/addons.xml</info>
-			<checksum>http://theunjudged.com/Blamo/addons.xml.md5</checksum>
-			<datadir zip="true">http://theunjudged.com/Blamo/</datadir>		
-		</dir>
-		<dir>
-			<info compressed="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz</info>
-			<checksum>http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz.md5</checksum>
-			<datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
-		</dir>
-		<dir>
 			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
 			<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
@@ -38,11 +28,6 @@
 			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
-		</dir>
-		<dir>
-		    <info compressed="false">http://theunjudged.com/ATrain/repo/addons.xml</info>
-		    <checksum>http://theunjudged.com/ATrain/repo/addons.xml.md5</checksum>
-		    <datadir zip="true">http://theunjudged.com/ATrain/repo/</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
