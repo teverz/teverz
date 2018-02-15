@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.3" provider-name="Teverz">
+<addon id="repository.teverz" name="[COLOR blue]Teverz Addon Repo[/COLOR]" version="2.1.4" provider-name="Teverz">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -28,11 +28,6 @@
 			<info compressed="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz</info>
 			<checksum>http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/addons.xml.gz.md5</checksum>
 			<datadir zip="true">http://raw.githubusercontent.com/actionbronson/LazyMan/master/src/kodi/repository/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/trademark13/tmbkodi.com-repo/master/</datadir>		
 		</dir>
 		<dir>
 			<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
