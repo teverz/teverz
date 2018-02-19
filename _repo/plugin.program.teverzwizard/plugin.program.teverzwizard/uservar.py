@@ -7,15 +7,15 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = 'Teverz Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'http://dangre.com/xmls/wizard.txt'
+BUILDFILE      = 'http://teverz.com/xmls/wizard.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
 # Text File with APK info in it.
-APKFILE        = 'http://dangre.com/xmls/Apks.txt'
+APKFILE        = 'http://teverz.com/xmls/Apks.txt'
 # Text File with Youtube Videos URLs.  Leave as 'http://' to ignore
 YOUTUBETITLE   = 'Tutorials'
-YOUTUBEFILE    = 'http://dangre.com/xmls/Tutorials.txt'
+YOUTUBEFILE    = 'http://teverz.com/xmls/Tutorials.txt'
 # Text File for addon installer.  Leave as 'http://' to ignore
 ADDONFILE      = 'http://'
 # Text File for advanced settings.  Leave as 'http://' to ignore
@@ -34,18 +34,18 @@ ART            = os.path.join(PATH, 'resources', 'art')
 # Example:  ICONMAINT     = os.path.join(ART, 'mainticon.png')
 #           ICONSETTINGS  = 'http://aftermathwizard.net/repo/wizard/settings.png'
 # Leave as http:// for default icon
-ICONBUILDS     = 'http://dangre.com/xmls/icon.png'
-ICONMAINT      = 'http://dangre.com/xmls/icon.png'
-ICONAPK        = 'http://dangre.com/xmls/icon.png'
-ICONADDONS     = 'http://dangre.com/xmls/icon.png'
-ICONYOUTUBE    = 'http://dangre.com/xmls/icon.png'
-ICONSAVE       = 'http://dangre.com/xmls/icon.png'
-ICONSPEED	   = 'http://dangre.com/xmls/icon.png'
-ICONTRAKT      = 'http://dangre.com/xmls/icon.png'
-ICONREAL       = 'http://dangre.com/xmls/icon.png'
-ICONLOGIN      = 'http://dangre.com/xmls/icon.png'
-ICONCONTACT    = 'http://dangre.com/xmls/icon.png'
-ICONSETTINGS   = 'http://dangre.com/xmls/icon.png'
+ICONBUILDS     = 'http://teverz.com/xmls/icon.png'
+ICONMAINT      = 'http://teverz.com/xmls/icon.png'
+ICONAPK        = 'http://teverz.com/xmls/icon.png'
+ICONADDONS     = 'http://teverz.com/xmls/icon.png'
+ICONYOUTUBE    = 'http://teverz.com/xmls/icon.png'
+ICONSAVE       = 'http://teverz.com/xmls/icon.png'
+ICONSPEED	   = 'http://teverz.com/xmls/icon.png'
+ICONTRAKT      = 'http://teverz.com/xmls/icon.png'
+ICONREAL       = 'http://teverz.com/xmls/icon.png'
+ICONLOGIN      = 'http://teverz.com/xmls/icon.png'
+ICONCONTACT    = 'http://teverz.com/xmls/icon.png'
+ICONSETTINGS   = 'http://teverz.com/xmls/icon.png'
 # Hide the ====== seperators 'Yes' or 'No'
 HIDESPACERS    = 'No'
 # Character used in seperator
@@ -84,7 +84,7 @@ CONTACTFANART  = ''
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'No'
 # URL to wizard version
-WIZARDFILE     = 'http://www.dangre.cm/xmls/wizard.txt'
+WIZARDFILE     = 'http://www.teverz.cm/xmls/wizard.txt'
 #########################################################
 
 #########################################################
